@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+.vscode/
+
+firmware/secrets.yaml
+
+.DS_Store
+Thumbs.db
