@@ -9,4 +9,6 @@ with schemdraw.Drawing(file=str(outfile)) as d:
     d += elm.Resistor().label("220Ω")
     d += elm.LED()
     d += elm.Ground()
-    
+
+# IMPORTANT: just save, do NOT open
+d.save(str(outfile))
