@@ -33,3 +33,10 @@ jobs:
             echo "Running $file"
             python "$file"
           done
+
+      - name: Commit generated SVGs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-generate schematics"
+          file_pattern: docs/*.svg
+          
